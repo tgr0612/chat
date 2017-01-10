@@ -12,20 +12,31 @@
 
 
 
+
   </script>
 </head>
 
 
 <body>
+
   <div data-role="page">
-      <div data-role="header">
-          <h1>Socket.io Chat</h1>
-      </div>
+      <div data-role="header"><h1>Socket.io Chat</h1></div>
+
       <div data-role="content">
           <h3>Nick Name</h3>
           <input id="name" />
-          <a data-role="button" href="#chatpage">Start Chat</a>
-      </div>
+          <a data-role="button" href="#chatpage">Start Chat</a></div>
+  </div>
+
+
+  <div data-role="page" id="chatpage">
+    <div data-role="header"><h1>Socket.io.Chat</h1></div>
+
+    <div data-role="content">
+      <input id="message"/>
+      <button>Button</button>
+      <ul id="content" data-role="listview" data-insert="true"></ul></div>
+
   </div>
 
 </body>
